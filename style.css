@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5EFE6;
+    font-family: "EB Garamond", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 10px;
+    color: #1A4D2E;
+    font-size: 64px;
+  font-variation-settings: 'GRAD' 88;
+     
+}
+
+
+.box {
+    background-color: #1A4D2E;
+    text-wrap: wrap;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+    height: 30rem;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%); 
+    transition: transform 0.4s ease;
+
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.box.show{
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 24px;
+    color: #f0e7e7;
+    font-weight: bold;
+    justify-content: center;
+    text-underline-position: under;
+    
+}
+
+.box p{
+    margin-left: 30px;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-weight: lighter;
+    padding: 20px;
+    font-size: 17px;
+    text-align: justify;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
